@@ -7,7 +7,7 @@ const port =3003;
 
 import routers from "./routers/recipe-routers.js";
 
-
+app.use(express.json());
 app.use(express.static("punlic"));
 
 app.use('/', routers)
