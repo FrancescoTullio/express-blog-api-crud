@@ -1,7 +1,6 @@
 import postBlog from "../risorses/recipe";
 
 const postChekID = (req, res, next) => {
-    console.log("controllo se esiste");
     const id = parseInt(req.params.id)
     const post = postBlog.find((curPost)=> curPost.id === id)
     if(post) {
